@@ -3,7 +3,7 @@ import { createMenu, deleteMenu, getMenu, getMenuById, updateMenu } from "../Con
 import { createCustomer, deleteCustomer, getCustomer, getCustomerById, updateCustomer } from "../Controller/customerController.js";
 import { createReservasi, deleteReservasi, getReservasi, getReservasiById, updateReservasi } from "../Controller/reservasiController.js";
 import { createCafe, deleteCafe, getCafe, getCafeById, updateCafe } from "../Controller/cafeController.js";
-import { createTransaksi, getTransaksi, getTransaksiById, updateTransaksi } from "../Controller/transaksiController.js";
+import { createTransaksi, getTransaksi, getTransaksiById, updateTransaksi, deleteTransaksi } from "../Controller/transaksiController.js";
 
 const router = express.Router();
 
@@ -44,6 +44,6 @@ router.get("/transaksi", getTransaksi)
 router.get("/transaksi/:id", getTransaksiById)
 router.post("/transaksi/post", createTransaksi )
 router.put("/transaksi/update/:id", updateTransaksi )
-router.delete("/transaksi/delete/:id", deleteCafe )
+router.delete("/transaksi/delete/:id", deleteTransaksi )
 
-export default router
+export default route

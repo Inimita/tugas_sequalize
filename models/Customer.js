@@ -18,7 +18,7 @@ const Customer = db.define(
         type: DataTypes.STRING,
         allowNull: false
     },
-    no_telfon:{
+    no_telfon:{  
         type: DataTypes.INTEGER,
         allowNull: false
     }
